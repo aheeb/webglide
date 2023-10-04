@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Beispiel Seite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white h-screen overflow-auto">
+  <div class="relative h-screen w-full">
+    <img src="hintergrund.jpg" alt="Hintergrundbild" class="absolute w-full h-full object-cover">
+    <div class="absolute bg-gray-800 opacity-75 w-full h-full"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-4xl font-bold">WEBGLIDES</h1>
+      <p class="text-xl mt-4 mb-4">YOUR PARTNER, WHEN IT COMES TO A PROFESSIONAL ONLINE PRESENCE.</p>
+      <button id="scrollButton" class="bg-transparent hover:bg- text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+        Unsere Produkte
+      </button>
+    </div>
+  </div>
+  <div id="productsSection" class="relative h-screen w-full">
+    <img src="hintergrund2.jpg" alt="Hintergrundbild" class="absolute w-full h-full object-cover">
+    <div class="absolute bg-gray-800 opacity-75 w-full h-full"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h2 class="text-4xl font-bold mb-8">PRODUCTS</h2>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Produkt 1</h3>
+          <p>Einige Informationen über Produkt 1</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Produkt 2</h3>
+          <p>Einige Informationen über Produkt 2</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Produkt 3</h3>
+          <p>Einige Informationen über Produkt 3</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Produkt 4</h3>
+          <p>Einige Informationen über Produkt 4</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+        </div>
+        <button id="scrollButton2"class="bg-transparent hover:bg- text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+          OUR TEAM
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="teamSection" class="relative h-screen w-full">
+    <img src="hintergrund3.jpg" alt="Hintergrundbild" class="absolute w-full h-full object-cover">
+    <div class="absolute bg-gray-800 opacity-75 w-full h-full"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h2 class="text-4xl font-bold mb-8">OUR TEAM</h2>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Andri</h3>
+          <img style="height: 100px" src="andri.jpeg" alt="">
+          <p>DESIGN ENTHUSIAST</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Fabian</h3>
+          <img style="height: 100px" src="fabian.jpeg" alt="">
+          <p>ORGANISATION FANATIC</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Adrian</h3>
+          <img style="height: 100px" src="adrian.jpeg" alt="">
+          <p>TIKTOKER</p>
+        </div>
+      </div>
+      <button id="scrollButton3"class="bg-transparent hover:bg- text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+        CONTACT US
+      </button>
+    </div>
+  </div>
+
+  <div id="teamSection" class="relative h-screen w-full">
+    <img src="hintergrund3.jpg" alt="Hintergrundbild" class="absolute w-full h-full object-cover">
+    <div class="absolute bg-gray-800 opacity-75 w-full h-full"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h2 class="text-4xl font-bold mb-8">OUR TEAM</h2>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Andri</h3>
+          <img style="height: 100px" src="andri.jpeg" alt="">
+          <p>DESIGN ENTHUSIAST</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Fabian</h3>
+          <img style="height: 100px" src="fabian.jpeg" alt="">
+          <p>ORGANISATION FANATIC</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+          <h3 class="text-2xl">Adrian</h3>
+          <img style="height: 100px" src="adrian.jpeg" alt="">
+          <p>TIKTOKER</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contactSection" class="relative h-screen w-full">
+    <img src="hintergrund4.jpg" alt="Hintergrundbild" class="absolute w-full h-full object-cover">
+    <div class="absolute bg-gray-800 opacity-75 w-full h-full"></div>
+    <div id="contact" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h2 class="text-4xl font-bold mb-8">CONTACT US</h2>
+      <form class="bg-gray-800 p-4 rounded max-w-2xl">
+        <div class="mb-4">
+          <label for="name" class="block text-xl">Name</label>
+          <input type="text" id="name" name="name" class="bg-gray-900 text-white p-2 rounded w-full">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-xl">Email</label>
+          <input type="email" id="email" name="email" class="bg-gray-900 text-white p-2 rounded w-full">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-xl">Message</label>
+          <textarea id="message" name="message" class="bg-gray-900 text-white p-2 rounded w-full" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  
+  <script>
+    document.getElementById('scrollButton').addEventListener('click', function() {
+      const productsSection = document.getElementById('productsSection');
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('scrollButton2').addEventListener('click', function() {
+      const teamSection = document.getElementById('teamSection');
+      teamSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('scrollButton3').addEventListener('click', function() {
+      const contactSection = document.getElementById('contactSection');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

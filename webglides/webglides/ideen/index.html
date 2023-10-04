@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wall of Divs</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .wall-div {
+      border: 2px solid grey;
+      box-shadow: 0px 0px 5px 0px grey;
+      transition: all 0.3s ease-in-out;
+    }
+    .wall-div:hover {
+      background-color: blue;
+      box-shadow: 0px 0px 20px 5px blue;
+    }
+    .slide-in {
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide-in.active {
+      transform: translateX(0);
+    }
+  </style>
+  <script>
+    function showNextSection() {
+      const nextSection = document.getElementById('nextSection');
+      nextSection.classList.add('active');
+    }
+  </script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen relative">
+  <div class="wall flex flex-wrap">
+    <!-- Ihre divs hier -->
+    <div class="wall-div w-64 h-64"></div>
+    <div class="wall-div w-64 h-32"></div>
+    <div class="wall-div w-32 h-64"></div>
+    <div class="wall-div w-64 h-64"></div>
+    <div class="wall-div w-64 h-32"></div>
+    <div class="wall-div w-32 h-32"></div>
+    <div class="wall-div w-64 h-64"></div>
+    <div class="wall-div w-64 h-32"></div>
+    <div class="wall-div w-32 h-64"></div>
+    <div class="wall-div w-64 h-64"></div>
+    <div class="wall-div w-64 h-32"></div>
+    <div class="wall-div w-32 h-32"></div>
+    <!-- usw. -->
+  </div>
+  <div class="absolute inset-0 bg-gray-800 opacity-50 z-5 pointer-events-none"></div>
+  <!-- Titel in der Mitte -->
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-4xl flex flex-col items-center">
+    <span>Mein Titel</span>
+    <button class="mt-4 bg-gray-700 text-white px-2 py-1 text-sm" onclick="showNextSection()">Nächste Sektion</button>
+  </div>
+
+  <!-- Nächste Sektion -->
+  <div id="nextSection" class="bg-white absolute inset-0 flex items-center justify-center slide-in z-20">
+    
+  </div>
+</body>
+</html>
